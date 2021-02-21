@@ -1,0 +1,8 @@
+BrightTag.site('pkHRUx1',function(s){
+s.script('https://s.yimg.jp/images/listing/tool/cv/ytag.js').wait(function(){
+s.domready(function(){
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        window.yjDataLayer\x3d window.yjDataLayer|| [];\n      function ytag() { yjDataLayer.push(arguments); }\n\n        ytag({\n        \x22type\x22:\x22yjad_retargeting\x22,\n        \x22config\x22:{\n          \x22yahoo_retargeting_id\x22: "7DAVKUPQF4",\n          \x22yahoo_retargeting_label\x22: \x27\x27,\n          \x22yahoo_retargeting_page_type\x22: \x27\x27,\n          \x22yahoo_retargeting_items\x22: BrightTag.Util.map([], function(item) {\n            return {\n              item_id: item[\x27\x27],\n              category_id: item[\x27\x27],\n              price: item[\x27\x27],\n              quantity: item[\x27\x27]\n            }\n          })\n        }\n      });\n      \x3c/script\x3e',{tagId:4363724});
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        window.yjDataLayer\x3d window.yjDataLayer|| [];\n      function ytag() { yjDataLayer.push(arguments); }\n\n        ytag({\n        \x22type\x22:\x22yjad_retargeting\x22,\n        \x22config\x22:{\n          \x22yahoo_retargeting_id\x22: "W85L0C01W8",\n          \x22yahoo_retargeting_label\x22: \x27\x27,\n          \x22yahoo_retargeting_page_type\x22: \x27\x27,\n          \x22yahoo_retargeting_items\x22: BrightTag.Util.map([], function(item) {\n            return {\n              item_id: item[\x27\x27],\n              category_id: item[\x27\x27],\n              price: item[\x27\x27],\n              quantity: item[\x27\x27]\n            }\n          })\n        }\n      });\n      \x3c/script\x3e',{tagId:4635056});
+});
+});
+});
