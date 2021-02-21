@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box; }
+
+header {
+  background-color: white;
+  height: 75px;
+  width: 1170px;
+  border: thin solid #C0C0C0; }
+
+.logo {
+  width: 160px;
+  height: 100%;
+  float: left; }
+
+.labels-left {
+  height: 100%;
+  width: 60%;
+  float: left; }
+  .labels-left a {
+    height: 100%;
+    width: 15%;
+    margin: 0 0 0 30px;
+    cursor: pointer;
+    transition: 0.1s;
+    display: inline-block;
+    position: relative; }
+    .labels-left a:hover {
+      color: red;
+      border-bottom: thick solid red; }
+      .labels-left a:hover .link-icon {
+        color: red; }
+  .labels-left .link-text {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+    font-size: 12px;
+    display: inline-block; }
+  .labels-left .link-icon {
+    position: absolute;
+    left: 0%;
+    top: 35%;
+    color: #C0C0C0;
+    font-size: 20px;
+    display: inline-block; }
+
+.labels-right {
+  width: 20%;
+  height: 60px;
+  margin: 5px 0 0 0;
+  float: right;
+  display: inline-block; }
+  .labels-right a {
+    cursor: pointer;
+    height: 100%;
+    width: 33%;
+    float: right;
+    display: inline-block;
+    padding: 10px 10px;
+    border-left: thin solid silver;
+    transition: 0.1s; }
+    .labels-right a:hover {
+      color: red; }
+      .labels-right a:hover i {
+        color: red; }
+  .labels-right p {
+    text-align: center;
+    font-size: 12px; }
+  .labels-right i {
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 20px;
+    display: block; }
+
+.bar {
+  display: block;
+  width: 1170px;
+  font-size: 0px;
+  height: 4px;
+  margin-top: 10px;
+  padding: 0px; }
+  .bar .bar-part {
+    --color: black;
+    font-size: 10px;
+    margin: 0px 0.05%;
+    padding: 0px;
+    display: inline-block;
+    width: 19.9%;
+    height: 4px;
+    background: #C0C0C0;
+   }
+  .bar .extend {
+    animation: extend 4s linear 0.0s 1 normal none;
+    animation-play-state: running;
+    animation-fill-mode: none; }
+
+@keyframes extend {
+  0% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 0%, #C0C0C0 0%, #C0C0C0 100%); }
+  1% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 1%, #C0C0C0 1%, #C0C0C0 100%); }
+  2% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 2%, #C0C0C0 2%, #C0C0C0 100%); }
+  3% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 3%, #C0C0C0 3%, #C0C0C0 100%); }
+  4% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 4%, #C0C0C0 4%, #C0C0C0 100%); }
+  5% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 5%, #C0C0C0 5%, #C0C0C0 100%); }
+  6% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 6%, #C0C0C0 6%, #C0C0C0 100%); }
+  7% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 7%, #C0C0C0 7%, #C0C0C0 100%); }
+  8% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 8%, #C0C0C0 8%, #C0C0C0 100%); }
+  9% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 9%, #C0C0C0 9%, #C0C0C0 100%); }
+  10% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 10%, #C0C0C0 10%, #C0C0C0 100%); }
+  11% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 11%, #C0C0C0 11%, #C0C0C0 100%); }
+  12% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 12%, #C0C0C0 12%, #C0C0C0 100%); }
+  13% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 13%, #C0C0C0 13%, #C0C0C0 100%); }
+  14% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 14%, #C0C0C0 14%, #C0C0C0 100%); }
+  15% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 15%, #C0C0C0 15%, #C0C0C0 100%); }
+  16% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 16%, #C0C0C0 16%, #C0C0C0 100%); }
+  17% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 17%, #C0C0C0 17%, #C0C0C0 100%); }
+  18% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 18%, #C0C0C0 18%, #C0C0C0 100%); }
+  19% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 19%, #C0C0C0 19%, #C0C0C0 100%); }
+  20% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 20%, #C0C0C0 20%, #C0C0C0 100%); }
+  21% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 21%, #C0C0C0 21%, #C0C0C0 100%); }
+  22% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 22%, #C0C0C0 22%, #C0C0C0 100%); }
+  23% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 23%, #C0C0C0 23%, #C0C0C0 100%); }
+  24% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 24%, #C0C0C0 24%, #C0C0C0 100%); }
+  25% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 25%, #C0C0C0 25%, #C0C0C0 100%); }
+  26% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 26%, #C0C0C0 26%, #C0C0C0 100%); }
+  27% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 27%, #C0C0C0 27%, #C0C0C0 100%); }
+  28% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 28%, #C0C0C0 28%, #C0C0C0 100%); }
+  29% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 29%, #C0C0C0 29%, #C0C0C0 100%); }
+  30% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 30%, #C0C0C0 30%, #C0C0C0 100%); }
+  31% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 31%, #C0C0C0 31%, #C0C0C0 100%); }
+  32% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 32%, #C0C0C0 32%, #C0C0C0 100%); }
+  33% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 33%, #C0C0C0 33%, #C0C0C0 100%); }
+  34% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 34%, #C0C0C0 34%, #C0C0C0 100%); }
+  35% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 35%, #C0C0C0 35%, #C0C0C0 100%); }
+  36% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 36%, #C0C0C0 36%, #C0C0C0 100%); }
+  37% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 37%, #C0C0C0 37%, #C0C0C0 100%); }
+  38% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 38%, #C0C0C0 38%, #C0C0C0 100%); }
+  39% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 39%, #C0C0C0 39%, #C0C0C0 100%); }
+  40% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 40%, #C0C0C0 40%, #C0C0C0 100%); }
+  41% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 41%, #C0C0C0 41%, #C0C0C0 100%); }
+  42% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 42%, #C0C0C0 42%, #C0C0C0 100%); }
+  43% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 43%, #C0C0C0 43%, #C0C0C0 100%); }
+  44% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 44%, #C0C0C0 44%, #C0C0C0 100%); }
+  45% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 45%, #C0C0C0 45%, #C0C0C0 100%); }
+  46% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 46%, #C0C0C0 46%, #C0C0C0 100%); }
+  47% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 47%, #C0C0C0 47%, #C0C0C0 100%); }
+  48% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 48%, #C0C0C0 48%, #C0C0C0 100%); }
+  49% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 49%, #C0C0C0 49%, #C0C0C0 100%); }
+  50% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 50%, #C0C0C0 50%, #C0C0C0 100%); }
+  51% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 51%, #C0C0C0 51%, #C0C0C0 100%); }
+  52% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 52%, #C0C0C0 52%, #C0C0C0 100%); }
+  53% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 53%, #C0C0C0 53%, #C0C0C0 100%); }
+  54% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 54%, #C0C0C0 54%, #C0C0C0 100%); }
+  55% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 55%, #C0C0C0 55%, #C0C0C0 100%); }
+  56% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 56%, #C0C0C0 56%, #C0C0C0 100%); }
+  57% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 57%, #C0C0C0 57%, #C0C0C0 100%); }
+  58% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 58%, #C0C0C0 58%, #C0C0C0 100%); }
+  59% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 59%, #C0C0C0 59%, #C0C0C0 100%); }
+  60% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 60%, #C0C0C0 60%, #C0C0C0 100%); }
+  61% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 61%, #C0C0C0 61%, #C0C0C0 100%); }
+  62% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 62%, #C0C0C0 62%, #C0C0C0 100%); }
+  63% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 63%, #C0C0C0 63%, #C0C0C0 100%); }
+  64% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 64%, #C0C0C0 64%, #C0C0C0 100%); }
+  65% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 65%, #C0C0C0 65%, #C0C0C0 100%); }
+  66% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 66%, #C0C0C0 66%, #C0C0C0 100%); }
+  67% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 67%, #C0C0C0 67%, #C0C0C0 100%); }
+  68% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 68%, #C0C0C0 68%, #C0C0C0 100%); }
+  69% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 69%, #C0C0C0 69%, #C0C0C0 100%); }
+  70% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 70%, #C0C0C0 70%, #C0C0C0 100%); }
+  71% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 71%, #C0C0C0 71%, #C0C0C0 100%); }
+  72% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 72%, #C0C0C0 72%, #C0C0C0 100%); }
+  73% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 73%, #C0C0C0 73%, #C0C0C0 100%); }
+  74% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 74%, #C0C0C0 74%, #C0C0C0 100%); }
+  75% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 75%, #C0C0C0 75%, #C0C0C0 100%); }
+  76% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 76%, #C0C0C0 76%, #C0C0C0 100%); }
+  77% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 77%, #C0C0C0 77%, #C0C0C0 100%); }
+  78% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 78%, #C0C0C0 78%, #C0C0C0 100%); }
+  79% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 79%, #C0C0C0 79%, #C0C0C0 100%); }
+  80% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 80%, #C0C0C0 80%, #C0C0C0 100%); }
+  81% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 81%, #C0C0C0 81%, #C0C0C0 100%); }
+  82% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 82%, #C0C0C0 82%, #C0C0C0 100%); }
+  83% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 83%, #C0C0C0 83%, #C0C0C0 100%); }
+  84% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 84%, #C0C0C0 84%, #C0C0C0 100%); }
+  85% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 85%, #C0C0C0 85%, #C0C0C0 100%); }
+  86% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 86%, #C0C0C0 86%, #C0C0C0 100%); }
+  87% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 87%, #C0C0C0 87%, #C0C0C0 100%); }
+  88% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 88%, #C0C0C0 88%, #C0C0C0 100%); }
+  89% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 89%, #C0C0C0 89%, #C0C0C0 100%); }
+  90% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 90%, #C0C0C0 90%, #C0C0C0 100%); }
+  91% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 91%, #C0C0C0 91%, #C0C0C0 100%); }
+  92% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 92%, #C0C0C0 92%, #C0C0C0 100%); }
+  93% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 93%, #C0C0C0 93%, #C0C0C0 100%); }
+  94% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 94%, #C0C0C0 94%, #C0C0C0 100%); }
+  95% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 95%, #C0C0C0 95%, #C0C0C0 100%); }
+  96% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 96%, #C0C0C0 96%, #C0C0C0 100%); }
+  97% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 97%, #C0C0C0 97%, #C0C0C0 100%); }
+  98% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 98%, #C0C0C0 98%, #C0C0C0 100%); }
+  99% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 99%, #C0C0C0 99%, #C0C0C0 100%); }
+  100% {
+    background: linear-gradient(to right, var(--color) 0%, var(--color) 100%, #C0C0C0 100%, #C0C0C0 100%); }
+  }
+
+.game-titles {
+  width: 1170px;
+  height: 100px;
+  line-height: 100px;
+  border: solid thin #C0C0C0;
+  float: left; }
+  .game-titles .container:not(:last-child) {
+    border-right: dotted thin #C0C0C0; }
+  .game-titles .container {
+    line-height: 50px;
+    width: 20%;
+    padding: 0px 1%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block; }
+  .game-titles .game-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal; }
+  .game-titles span {
+    width: 70%;
+    font-size: 12px;
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle; }
+
+.display {
+  width: 1170px;
+  height: 680px;
+  display: block; }
+
+.non-display {
+  width: 1170px;
+  height: 680px;
+  display: none; }
