@@ -1,3 +1,24 @@
+// const id = document.getElementById("top-banner");
+// const id = 4;
+// console.log(id);
+//
+// const games = [
+//   {id:1, name:"ピクミン3 デラックス",iconSrc:"pikumin-icon.jpg",bannerSrc:"/img/pikumin-banner.jpg"},
+//   {id:2, name:"あつまれ　どうぶつの森",iconSrc:"",bannerSrc:""},
+//   {id:3, name:"脳を鍛える大人のNintendo Switchトレーニング",iconSrc:"",bannerSrc:""},
+//   {id:4, name:"世界のアソビ大全51",iconSrc:"",bannerSrc:""},
+//   {id:5, name:"ポケットモンスターソード・シールド",iconSrc:"",bannerSrc:""}
+// ];
+
+// <% games.forEach((game)=>{ %>
+//
+//   <a href="#"><%= game.name %></a>
+// <% }); %>
+// module.exports = function(){
+//   console.log("Hello World!");
+//   // console.log(document);
+// }
+
 $(function(){
   const games = [
   {id:1, name:"ピクミン3 デラックス",iconSrc:"public/img/pikumin-icon.jpg",bannerSrc:"public/img/pikumin-banner.jpg",keyword:"pikumin"},
