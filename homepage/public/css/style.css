@@ -71,6 +71,14 @@ header {
     font-size: 20px;
     display: block; }
 
+#top-banner {
+  width: 1170px;
+  text-align: center;
+}
+
+#top-banner img{
+  vertical-align: top;
+}
 .bar {
   display: block;
   width: 1170px;
@@ -299,6 +307,7 @@ header {
   }
 
 .game-titles {
+  font-size: 0;
   width: 1170px;
   height: 100px;
   line-height: 100px;
@@ -309,10 +318,12 @@ header {
   .game-titles .container {
     line-height: 50px;
     width: 20%;
-    padding: 0px 1%;
+    padding: 0px;
+    margin:0px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
+    box-sizing: border-box;
     display: inline-block; }
   .game-titles .game-icon {
     width: 40px;
@@ -327,12 +338,10 @@ header {
     line-height: normal;
     vertical-align: middle; }
 
-.display {
+.banner-display{
   width: 1170px;
   height: 680px;
-  display: block; }
-
-.non-display {
-  width: 1170px;
-  height: 680px;
-  display: none; }
+  display: none;}
+  .display{
+    display: block;
+  }

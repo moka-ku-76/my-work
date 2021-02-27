@@ -5,7 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Nintedo homepage</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- <svg class="icon icon-wrench"><use xlink:href="#icon-wrench"></use></svg> -->
   </head>
   <body>
@@ -14,8 +14,8 @@
       <div class="labels-left">
         <a><i class="fa fa-plus link-icon" ></i> <span class="link-text">本体・amiibo</span></a>
         <a><i class="fa fa-star link-icon" ></i> <span class="link-text">ゲームソフト</span></a>
-        <a><i class="fa fa-newspaper-o link-icon"></i> <span class="link-text">トピックス</span></a>
-        <a><i class="fa fa-smile-o link-icon"></i> <span class="link-text">キャラクター</span></a>
+        <a><i class="fa fa-newspaper link-icon"></i> <span class="link-text">トピックス</span></a>
+        <a><i class="fa fa-smile link-icon"></i> <span class="link-text">キャラクター</span></a>
         <a><i class="fa fa-wrench link-icon"></i> <span class="link-text">サポート</span></a>
       </div>
       <div class="labels-right">
@@ -30,24 +30,29 @@
 
       <div class="top">
         <div id="top-banner">
-          <img class = "display" src="<%= games[0].bannerSrc %>" alt="画像が読み込めません">
-          <img class = "non-display" src="/img/domori-banner.jpg" alt="画像が読み込めません">
-          <img class = "non-display" src="/img/notore-banner.jpg" alt="画像が読み込めません">
-          <img class = "non-display" src="/img/asobi-banner.jpg" alt="画像が読み込めません">
-          <img class = "non-display" src="/img/pokemon-banner.jpg" alt="画像が読み込めません">
+          <% for(let i = 0; i < 5 ; i++){ %>
+            <img class ="banner-display" src= <%= "img/" +   games[i].keyword  + "-banner.jpg" %>  alt="画像を読み込めません">
+          <% }; %>
         </div>
-        <button type="button" name="button" id = "del-btn">削除</button>
-        <!-- <img id="banner-1" src="/img/pikumin-banner.jpg" alt=""> -->
-        <% games.forEach((game)=>{ %>
+        <ul class="bar">
+          <% for(let i = 0; i < 5 ; i++){ %>
+          <li class="bar-part"></li>
+          <% }; %>
+        </ul>
 
-          <a href="#"><%= game.name %></a>
-        <% }); %>
+        <div class="game-titles">
+          <% for(let i = 0; i < 5 ; i++){ %>
+          <div class = "container">
+            <img class ="game-icon" src= <%= "img/" +   games[i].keyword  + "-icon.jpg" %>  alt="画像を読み込めません">
+            <span href = "#"> <%= games[i].name %></span>
+          </div>
+          <% }; %>
+        </div>
       </div>
     </div>
     <div class="topics">
-      <h1>トピックス</h1>
     </div>
 
-    <!-- <script src="./../script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
