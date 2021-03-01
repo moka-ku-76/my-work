@@ -44,7 +44,7 @@
           <% for(let i = 0; i < 5 ; i++){ %>
           <div class = "container">
             <img class ="game-icon" src= <%= "img/" +   games[i].keyword  + "-icon.jpg" %>  alt="画像を読み込めません">
-            <span href = "#"> <%= games[i].name %></span>
+            <span href = "#"> <%- games[i].name %></span>
           </div>
           <% }; %>
         </div>
