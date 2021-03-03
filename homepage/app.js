@@ -21,7 +21,7 @@ app.set("views", "./views")
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'kymo7620',
+  password: '***',
   database: 'nintendo'
 });
 
