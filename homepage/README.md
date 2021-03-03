@@ -15,9 +15,9 @@ gamesは"id","name","keyword"
 
 
 ## その他学習した知識
-*Node.js
-  *ejs
-  *express
-*jQuery
-*Sass
-*MySQL
+- Node.js
+  - ejs
+  - express
+- jQuery
+- Sass
+- MySQL
